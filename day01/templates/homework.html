@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        function homework(){
+
+            var value = document.getElementById('name').value
+            var xhr = new XMLHttpRequest()
+            var url = '/homework?name='+value
+            xhr.open('get',url,true)
+            xhr.onreadystatechange = function(){
+                if (xhr.readyState==4 && xhr.status==200){
+                    document.getElementById('show').innerHTML = xhr.responseText
+
+                }
+            }
+
+            xhr.send(null)
+
+        }
+
+    </script>
+
+    用户名:<input type="text" onblur="homework()" id="name">
+
+     <p id="show"></p>
+</body>
+</html>

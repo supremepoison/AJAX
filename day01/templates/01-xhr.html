@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <!--<script>-->
+        <!--if(window.XMLHttpRequest){-->
+            <!--alert('您的浏览器支持XHR')-->
+        <!--}else{-->
+            <!--alert('很遗憾,您的浏览器不支持XHR')-->
+        <!--}-->
+    <!--</script>-->
+
+    <script>
+        function createXhr() {
+            if(window.XMLHttpRequest){
+                var xhr = new XMLHttpRequest();
+
+            }else{
+                var xhr = new ActiveXObject('Microsoft.XMLHttp');
+            }
+
+            return xhr
+        }
+        function btnAjax(){
+            //1.创建xhr
+            var xhr = createXhr();
+            //2.创建请求
+            xhr.open('get','/server?uname=wangwc',true);
+            //3.设置回调函数
+            xhr.onreadystatechange = function(){
+                //判断xhr的状体以及服务器的状态
+                if(xhr.readyState==4 && xhr.status == 200){
+                    document.getElementById('show').innerHTML=xhr.responseText
+                }
+            }
+            //4.发送请求
+            xhr.send(null)
+        }
+    </script>
+    <div id="show"></div>
+    <!--<button onclick="console.log(createXhr())">xhr</button>-->
+    <button onclick="btnAjax()">AJAX</button>
+
+</body>
+</html>
