@@ -1,0 +1,100 @@
+day02笔记
+
+1.AJAX 发送 post 请求
+    1.请求数据要放在send()提交的
+        var xhr = createXhr();
+        xhr.open('post',url,true)
+        xhr.onreadystatechange = function(){
+            if(){
+                }
+
+            }
+        xhr.send('uname=wc&age=39');
+
+    2.Content-Type 的问题
+        AJAX的post请求,默认会将Content-Type的消息头的值更改为'text/plain',所以导致提交参数无法获取
+        解决方案: 将Content-Type的值更改为:
+        'application/x-www-form-urlencoded'
+
+        xhr.setRequestHeader('Content-Type','application/x-www-form-urlencoded');
+
+2.JSON
+    1.JSON介绍
+        JSON : JavaScript Object Notation
+                JS          对象   表现形式
+        将复杂结构的字符串转换成JS对象的表现形式,方便前段解析
+
+    2.JSON的表现
+        1.JSON表示单个对象
+            1.使用{}表示一个对象
+            2.在{}中使用key:value的形式表示属性(数据)
+            3.key必须使用""引起来
+            4.value如果是字符串的话,也必须使用""引起来
+            5.多对 key:value之间使用,隔开
+
+            var obj = {
+            "name":"狗",
+            "age":10,
+            "gender":"Male",
+        }
+
+    3.使用JSON表示一个数组
+        1.使用[]来表示一个数组
+        2.数组中允许包含若干字符串 或 JS对象
+            1.使用JSON数组来表示若干字符串
+                var arr = ["狗","猫","鼠"];
+            2.使用JSOn数组来表示若干对象
+                通过一个数组保存3个人的信息(name,age,gender)
+                var arr = [
+                    {
+                        "name":"狗",
+                        "age":20,
+                        "gender":"male"
+                    },
+                    {
+                        "name":"猫",
+                        "age":10,
+                        "gender":"female"
+                    },
+                    {
+                        "name":"鼠",
+                        "age":1,
+                        "gender":"biosexual"
+                    }
+                ]
+            3.使用 jq 循环遍历数组
+                1.$arr.each();
+                    $arr : jQuery中的数组
+                    语法:
+                        $arr.each(function(i,obj){
+                            i : 遍历出来的元素的下标
+                            obj: 遍历出来的元素
+                        });
+
+                2.$.each()
+                    $ -----> jQuery
+                    语法:$.each(arr,function(i,obj){
+
+                    })
+
+    4.后台处理JSON
+        1.前后端 JSON 的处理流程
+            1.后端先查询出/得到复杂结构的数据
+            2.在后端将复杂结构的数据转换成符合JSON格式的字符串
+            3.在后端将JSON格式的字符串响应给前段
+            4.在前端将JSON格式的字符串再转换为JS对象/数组
+            5.在前端JS对象/数组 进行循环遍历/取值操作
+
+        2.Python中的JSON处理
+            在Python中可以使用 json 类完成JSON的转换
+
+            import json
+            jsonStr = json.dumps(元祖 列表 字典)
+            return jsonStr
+
+        3.前段中的JSON处理
+            由于服务器端响应回来的数据是String,所以在前端对复杂结构的数据必须转换成JS对象或数组,然后
+            再取值或循环遍历
+                在 JS 中:
+
+                js对象 = JSON.parse(JSON字符串)

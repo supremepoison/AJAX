@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="/static/js/jquery-1.11.3.js"></script>
+    <script src="/static/js/common.js"></script>
+    <script>
+        $(function () {
+            $('#btnPost').click(function(){
+                var xhr = createXhr()
+                xhr.open('post','/01-server',true);
+                xhr.onreadystatechange = function(){
+                    if (xhr.readyState==4 && xhr.status==200){
+                        $('#show').html(xhr.responseText)
+                    }
+                }
+                // 请求消息头
+                xhr.setRequestHeader('Content-type','application/x-www-form-urlencoded');
+
+                xhr.send('uname=wangwc&uage=35')
+            });
+        });
+    </script>
+</head>
+<body>
+    <button id="btnPost">发送AJAX请求</button>
+    <div id="show"></div>
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <script src="../static/js/common.js"></script>
+    <script src="../static/js/jquery-1.11.3.js"></script>
+    <script>
+        $(function(){
+            $('#btnAjax').click(function(){
+                var xhr = createXhr()
+                xhr.open('get','/03-server',true)
+                xhr.onreadystatechange=function(){
+                    if(xhr.readyState==4&&xhr.status==200){
+                        console.log(xhr.responseText)
+                    }
+
+                }
+                xhr.send(null)
+
+            })
+        })
+
+    </script>
+</head>
+<body>
+    <button id="btnAjax">发送Ajax请求</button>
+</body>
+</html>

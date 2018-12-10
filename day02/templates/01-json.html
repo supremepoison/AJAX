@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../static/js/jquery-1.11.3.js"></script>
+
+</head>
+<body>
+    <!--<script>-->
+    <!--//声明一个JS对象,用来表示 狗 的信息-->
+        <!--var obj = {-->
+            <!--"name":"狗",-->
+            <!--"age":10,-->
+            <!--"gender":"Male",-->
+        <!--}-->
+        <!--var wife = {-->
+            <!--"name":"猫",-->
+            <!--"age":2,-->
+            <!--"gender":"Female",-->
+            <!--"hobby":"Fight"-->
+
+        <!--}-->
+        <!--console.log(obj.name);-->
+        <!--console.log(obj.age);-->
+        <!--console.log(obj.gender);-->
+
+        <!--console.log(wife.name,wife.age,wife.gender,wife.hobby)-->
+    <!--</script>-->
+    <script>
+        var arr = [
+                {
+                    "name":"狗",
+                    "age":20,
+                    "gender":"male"
+                },
+                {
+                    "name":"猫",
+                    "age":10,
+                    "gender":"female"
+                },
+                {
+                    "name":"鼠",
+                    "age":1,
+                    "gender":"bisexual"
+                }
+            ];
+        // for (var i =0;i<arr.length;i++){
+        //     var obj = arr[i];
+        //     console.log(obj.name,obj.age,obj.gender)
+        // }
+
+        //使用 jq中的 $arr.each() 循环遍历 arr 数组
+        //先将 arr 转换成 jq 的数组 - $(arr)
+        $(arr).each(function(i,obj){
+            console.log('第'+(i+1)+'个元素');
+            console.log('姓名:'+obj.name,'年龄:'+obj.age,'性别:'+obj.gender)
+
+        })
+
+    </script>
+
+</body>
+</html>

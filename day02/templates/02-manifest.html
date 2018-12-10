@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../static/js/jquery-1.11.3.js"></script>
+
+</head>
+<body>
+    <script>
+
+        var arr = [
+            {
+                "name":"狗",
+                "age":20,
+                "gender":"male"
+            },
+            {
+                "name":"猫",
+                "age":10,
+                "gender":"female"
+            },
+            {
+                "name":"鼠",
+                "age":1,
+                "gender":"bisexual"
+            }
+        ];
+        $(function(){
+            $('#show').click(function(){
+                var html = "";
+                //循环遍历ａｒｒ 中的每个元素以及每个属性
+                //将遍历出来的内容拼接到html之后
+                $.each(arr,function(i,obj){
+                    // html += "<tr>";
+                    //     html += "<td>"+obj.name+"</td>";
+                    //     html += "<td>"+obj.age+"</td>";
+                    //     html += "<td>"+obj.gender+"</td>";
+                    // html += "</tr>";
+
+                    $('#t2').append("<tr><td>"+obj.name+"</td><td>"+obj.age+"</td><td>"+obj.gender+"</td></tr>")
+                })
+                // $('#t2').html(html);
+
+
+
+            })
+        })
+    </script>
+
+    <button id="show">显示</button>
+    <table id="t1" width="400" border="1">
+        <thead>
+
+            <th>姓名</th>
+            <th>年龄</th>
+            <th>性别</th>
+
+        </thead>
+        <tbody id="t2">
+
+        </tbody>
+    </table>
+
+</body>
+</html>

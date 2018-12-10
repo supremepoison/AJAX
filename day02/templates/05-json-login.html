@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="/static/js/common.js"></script>
+    <script src="/static/js/jquery-1.11.3.js"></script>
+    <script>
+        $(function(){
+            $("#btnJSON").click(function(){
+                var xhr = createXhr()
+                xhr.open('get','/05-server',true)
+                xhr.onreadystatechange=function(){
+                    if(xhr.readyState==4&&xhr.status==200){
+
+                        var obj = JSON.parse(xhr.responseText)
+                        console.log('id:'+obj.id,'lname:'+obj.lname,'uanme:'+obj.uname)
+
+                    }
+
+                }
+                xhr.send()
+            })
+        })
+
+    </script>
+</head>
+
+<body>
+    <button id="btnJSON">JSON数据</button>
+
+</body>
+</html>

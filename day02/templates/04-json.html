@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="/static/js/common.js"></script>
+    <script src="/static/js/jquery-1.11.3.js"></script>
+</head>
+<body>
+    <button id="btnJSON">JSON数据</button>
+    <script>
+        $(function(){
+            $('#btnJSON').click(function(){
+                var xhr = createXhr()
+                xhr.open('get','/04-server',true)
+                xhr.onreadystatechange=function(){
+                    if(xhr.readyState==4&&xhr.status==200){
+                        // console.log(xhr.responseText)
+                        //将responseText转换为 JSON 格式对象
+                        var arr = JSON.parse(xhr.responseText);
+
+                        $.each(arr,function(i,obj){
+                            console.log(obj.name);
+                            console.log(obj.age);
+                            console.log(obj.gender)
+                        })
+                    }
+                }
+                xhr.send(null)
+            })
+        })
+    </script>
+
+</body>
+</html>
