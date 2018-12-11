@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/jquery-1.11.3.js"></script>
+    <script>
+        $(function(){
+            $('#btnPost').click(function(){
+                var params   = {
+                    "uname":"wangwc",
+                    "ugender":"男"
+                }
+                $.post('/04-jq-post',params,function(data){
+                    $('#show').html(data)
+                })
+            })
+        })
+    </script>
+</head>
+<body>
+    <button id="btnPost">发送post请求</button>
+<div id="show"></div>
+
+
+</body>
+</html>

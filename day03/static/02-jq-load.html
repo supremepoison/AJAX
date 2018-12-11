@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <script src="js/jquery-1.11.3.js"></script>
+    <script>
+        $(function(){
+            $("#btnLoad").click(function(){
+                var params = {
+                    "uname" : "wangwc",
+                    "uage" : 30
+                }
+                $("#show").load('/02-jq-load',params,function(resText,statusText){
+                    console.log('响应回来的文本是:'+resText)
+                    console.log('状态文本是:'+statusText)
+                    $(this).html('<h1>'+resText+'</h1>')
+                    })
+            })
+        })
+    </script>
+</head>
+<body>
+    <button id="btnLoad">使用load方法加载数据</button>
+    <div id="show"></div>
+
+</body>
+</html>

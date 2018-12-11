@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/common.js"></script>
+    <script src="js/jquery-1.11.3.js"></script>
+    <script>
+        $(function(){
+            $("#btnShow").click(function(){
+                var xhr = createXhr()
+                xhr.open('get','/00-server',true)
+                xhr.onreadystatechange=function(){
+                    if(xhr.readyState==4 && xhr.status==200){
+                        var arr = JSON.parse(xhr.responseText)
+                        var html = ""
+                        $.each(arr,function(i,obj){
+                            html +="<tr>"
+                                html += "<td>"+obj.id+"</td>"
+                                html += "<td>"+obj.lname+"</td>"
+                                html += "<td>"+obj.lpwd+"</td>"
+                                html += "<td>"+obj.uname+"</td>"
+                            html +="</tr>"
+
+                        })
+                        $("#content").html(html)
+                    }
+
+                }
+                xhr.send()
+            })
+
+        })
+    </script>
+</head>
+<body>
+    <button id="btnShow">Show all</button>
+    <table width="400" border="1">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>lname</th>
+                <th>lpwd</th>
+                <th>uname</th>
+            </tr>
+        </thead>
+        <tbody id="content">
+
+        </tbody>
+    </table>
+</body>
+</html>

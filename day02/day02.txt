@@ -59,7 +59,7 @@ day02笔记
                     {
                         "name":"鼠",
                         "age":1,
-                        "gender":"biosexual"
+                        "gender":"bisexual"
                     }
                 ]
             3.使用 jq 循环遍历数组

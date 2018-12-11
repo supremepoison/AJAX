@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="/static/js/common.js"></script>
+    <script src="/static/js/jquery-1.11.3.js"></script>
+     <script>
+
+            function loadPro() {
+                var xhr = createXhr()
+                xhr.open('get', '/01-server', false)
+                xhr.onreadystatechange = function () {
+                    if (xhr.readyState == 4 && xhr.status == 200) {
+                        var pname = JSON.parse(xhr.responseText)
+                        var option = ""
+                        $.each(pname, function (i, obj) {
+                            option += "<option value='"+obj.id+"'>"
+                            option += obj.pname
+                            option += "</option>"
+                        })
+                        $("#province").html(option)
+
+                    }
+                }
+                xhr.send()
+            }
+
+            function loadCity(pid){
+                var xhr = createXhr()
+                var url = '/01-city?pid='+pid
+                xhr.open('get',url,true)
+                xhr.onreadystatechange = function () {
+                    if (xhr.readyState == 4 && xhr.status == 200) {
+                        var arr = JSON.parse(xhr.responseText)
+                        var option = ""
+                        $.each(arr,function(i,obj){
+                            option += "<option value='"+obj.id+"'>"
+                            option += obj.cname
+                            option += "</option>"
+
+
+                        })
+                        $("#city").html(option)
+                    }
+                    }
+                xhr.send()
+            }
+
+            $(function(){
+                //调用loadPro,在网页加载时显示所有的省份
+                loadPro()
+                $('#province').change(function(){
+                    loadCity(this.value)
+
+                })
+                loadCity($('#province').val())
+            })
+    </script>
+</head>
+<body>
+   <select id="province" >
+
+   </select>
+    <select id="city" >
+
+   </select>
+
+</body>
+</html>

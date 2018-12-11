@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/jquery-1.11.3.js"></script>
+    <script>
+        $(function(){
+            $('#uname').blur(function(){
+                // var uname = document.getElementById('uname').value
+
+                var uname = $('#uname').val()
+                var param = {
+                    "uname" :uname
+                }
+                $.get('/05-login',param,function(data){
+                    if(data.status == 1){
+                        $('#span').html(data.text)
+                    }else{
+                        $('#span').html(data.text)
+                    }
+
+                },'json')
+            })
+        })
+    </script>
+</head>
+<body>
+    登录名称:<input id="lname"><br>
+    登录密码:<input id="pwd"><br>
+    用户名称:<input id="uname"> <span id="span"></span> <br>
+    <button id="show">注册</button>
+
+</body>
+</html>

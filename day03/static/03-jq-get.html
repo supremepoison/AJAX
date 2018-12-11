@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/jquery-1.11.3.js"></script>
+    <script>
+        $(function(){
+            $("#btnGet").click(function(){
+                $.get('/03-jq-get',function(resText){
+                    //resText表示的是响应回来的数据
+                    console.log(resText,typeof(resText))
+                    console.log(resText.uname)
+                    console.log(resText.uage)
+
+                },'json')
+
+            })
+        })
+
+    </script>
+</head>
+<body>
+    <button id="btnGet">使用get方式发送请求</button>
+
+</body>
+</html>
