@@ -6,30 +6,90 @@
     <script src="js/jquery-1.11.3.js"></script>
     <script>
         $(function(){
-            $('#uname').blur(function(){
+            function check_login(){
                 // var uname = document.getElementById('uname').value
-
+                // ret 默认值为false ,表示用户不存在
+                var ret = false
                 var uname = $('#uname').val()
                 var param = {
                     "uname" :uname
                 }
-                $.get('/05-login',param,function(data){
-                    if(data.status == 1){
-                        $('#span').html(data.text)
-                    }else{
-                        $('#span').html(data.text)
-                    }
+                // $.get('/05-login',param,function(data){
+                //     if(data.status == 1){
+                //         $('#span').html(data.text)
+                //         //true表示用户存在
+                //         ret = true
+                //     }else{
+                //         $('#span').html(data.text)
+                //
+                //     }
+                //
+                // },'json')
 
-                },'json')
+                $.ajax({
+                    url:'/05-login',
+                    type:'get',
+                    data:param,
+                    dataType:'json',
+                    async:false,
+                    success:function(data){
+                        if(data.status == 1){
+                        $('#span').html(data.text)
+                        //true表示用户存在
+                        ret = true
+                        }else{
+                            $('#span').html(data.text)
+
+                        }
+
+                    }
+                })
+                return ret
+            }
+            $('#uname').blur(check_login)
+            $('#btnReg').click(function(){
+                var ret = check_login()
+                if (ret){
+                    alert('不能注册')
+                }else{
+                    var params = {
+                        "lname" : $('#lname').val(),
+                        'lpwd' : $("#pwd").val(),
+                        'uname' : $('#uname').val()
+                    }
+                    $.post('/05-server',params,function(data){
+                        if(data.status == 1){
+                        $('#span').html(data.text)
+                        //true表示用户存在
+                        ret = true
+                        }else{
+                            $('#span').html(data.text)
+
+                        }
+
+                    },'json')
+                }
+
+                //
+                // $.ajax({
+                //     url:'/05-login',
+                //     type:'get',
+                //     data: 'new_uname='+uname,
+                //     success:(function(receive){
+                //         $('#span').html(receive)
+                //
+                //     })
+                // })
+
             })
         })
     </script>
 </head>
 <body>
     登录名称:<input id="lname"><br>
-    登录密码:<input id="pwd"><br>
+    登录密码:<input type="password" id="pwd"><br>
     用户名称:<input id="uname"> <span id="span"></span> <br>
-    <button id="show">注册</button>
+    <button id="btnReg">注册</button>
 
 </body>
 </html>

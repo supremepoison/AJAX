@@ -25,6 +25,7 @@ day03笔记
             1.html: 响应回来的文本当成HTML文本处理
             2.text: 响应回来的文本当成text文本处理
             3.json: 响应回来的文本当成json进行处理(转换成js对象)
+            4.script
 
     3.$.post(url[,data][,callback][,type])
         各参数作用同 $.get

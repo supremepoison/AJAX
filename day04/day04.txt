@@ -1,0 +1,105 @@
+day04笔记
+
+1.jq 对 ajax 支持
+    1.$.ajax()
+        语法: $.ajax({})
+            {}: 请求的相关参数
+             1.url: 字符串,表示异步请求的地址
+             2.type: 字符串,表示请求方式, get 或 post
+             3.data: 传递到服务器的参数
+                    1.可以使字符串: "uname=wangwc&uage=30"
+                    2.可以使JSON
+                        {
+                            "uname":"wangwc"
+                            "uage": 30
+                        }
+             4.dataType: 字符串,服务器端响应回来的数据格式
+                1.html
+                2.xml
+                3.text
+                4.script
+                5.json
+                6.jsonp: 跨域时使用
+
+             5.async: 布尔类型,表示是否采用异步方式
+                1.true: 采用异步
+                2.false: 采用同步
+
+             6.success : 回调函数,请求和响应成功后的操作
+                function(data){
+                    data 表示响应回来的数据
+                }
+
+             7.error: 回调函数,请求或响应失败时回来执行的操作
+             8.beforesend: 回调函数,发送ajax请求之前要执行的操作
+                如果return false 则表示终止发送请求
+
+
+
+2.跨域(Cross Domain)
+    1.什么是跨域
+        HTTP协议中有一种'同源策略'
+            同源: 在多个地址中,相同协议,相同域名,相同端口 被视为'同源'
+            在HTTP中,必须是同源地址才能互相发送请求,非同源的请求会被拒绝
+            <script>和<img>除外
+
+            http://www.tedu.cn/a.html
+            http://www.tedu.cn/page/b.html
+            (端口 不写默认为 80 )
+            以上地址是'同源'地址
+
+            http://www.tedu.cn/a.html
+            https://www.tedu.cn/server/getall
+            由于协议不同,以上地址'非同源'
+
+            http://localhost:5000/a.html
+            http://127.0.0.1:5000/server
+            由于域名不同,以上地址'非同源'
+
+        跨域: 非同源的网页,相互发送请求的操作就是跨域操作
+
+    2.解决方案
+        通过 <script> 向服务器发送请求
+        由服务器资源指定前段页面的哪个方法来执行响应的数据
+
+        实现:
+            1.前段中向实现跨域操作时,动态创建script标记
+                var script=document.createElement('script')
+            2.为script元素设置响应属性
+                1.设置 type 的值为text/javascript
+                2.设置 src 的值为 请求地址
+                3.发送请求
+                    将创建的script元素追加到网页中即可
+                    var body = document.getElementByTagName('body')[0]
+                    body.append(script)
+                4.在前段,创建处理数据的响应方法
+                    function process(data){
+                        .... ....
+
+                    }
+                5.在服务器站,相应数据
+                    def xxx():
+                        return 'process('xxxx')'
+
+    3.jquey 跨域
+        jsonp : json with padding
+
+        方案一:
+            $.ajax({
+                url:'xxx',
+                type: 'get/post',
+                dataType: 'jsonp',
+                success: function(data){
+                    //响应成功后的处理
+                }
+            })
+
+        方案二:
+            $.ajax({
+                url:'xxx',
+                'type':'get/post',
+                dataType :'jsonp',
+                jsonp: 'callback', //定义callback的参数名
+                jsonpCallback : 'xxx' //定义json的回调函数名
+            })
+

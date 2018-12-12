@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/jquery-1.11.3.js"></script>
+    <script>
+        $(function(){
+            $('#btnCross').click(function(){
+                $.ajax({
+                    url: 'http://127.0.0.1:5000/03-jq-cross',
+                    type: 'get',
+                    dataType: 'jsonp',
+
+                    success:function(data){
+                        $('#flightNo').html(data.flightNo)
+                        $('#from').html(data.from)
+                        $('#to').html(data.To)
+                        $('#time').html(data.Time)
+
+                    }
+                })
+            })
+        })
+    </script>
+</head>
+<body>
+    <button id="btnCross">发送跨域请求</button>
+    <div>
+        <p>
+            航班号 :<span id="flightNo"></span>
+        </p>
+        <p>
+            出发:<span id="from"></span>
+        </p>
+        <p>
+            到达:<span id="to"></span>
+        </p>
+        <p>
+            时间<span id="time"></span>
+        </p>
+    </div>
+</body>
+</html>

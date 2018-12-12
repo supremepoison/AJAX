@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/jquery-1.11.3.js"></script>
+    <script>
+        $(function(){
+            $("#btnAll").click(function(){
+                $.ajax({
+                    url: '/06-jq-ajax',
+                    type: 'get',
+                    dataType: 'json',
+                    success : function(data){
+                        $.each(data,function(i,obj){
+                            console.log(obj.lname,obj.uname)
+                        })
+                    }
+                })
+            })
+        })
+
+    </script>
+</head>
+<body>
+    <button id="btnAll">显示所有数据</button>
+
+</body>
+</html>

@@ -2,13 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8ad9a787-0575-4324-9be4-40a030e8d6fb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/day03/day03.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day03/static/02-jq-load.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day03/static/03-jq-get.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day03/static/04-jq-post.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day03/templates/01-province.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Blog/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Blog/app/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Blog/app/main/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Blog/app/main/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Blog/app/user/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Blog/manage.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day03/static/06-jq-ajax.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day04/day04.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day04/run.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day04/static/02-crossdomain.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day04/static/03-jq-crossdomain.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day04/static/js/common.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day04/static/js/jquery-1.11.3.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day04/static/page.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day02/day02.txt" beforeDir="false" afterPath="$PROJECT_DIR$/day02/day02.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day03/day03.txt" beforeDir="false" afterPath="$PROJECT_DIR$/day03/day03.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day03/run02.py" beforeDir="false" afterPath="$PROJECT_DIR$/day03/run02.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day03/static/05-login.html" beforeDir="false" afterPath="$PROJECT_DIR$/day03/static/05-login.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../HTML5/Day01/01-page.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../HTML5/Day01/day01.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../HTML5/Day01/timg.jpg" beforeDir="false" />
@@ -178,7 +189,8 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/AJAX$run02.coverage" NAME="run02 Coverage Results" MODIFIED="1544521108021" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day03" />
+    <SUITE FILE_PATH="coverage/AJAX$run02.coverage" NAME="run02 Coverage Results" MODIFIED="1544582743723" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day03" />
+    <SUITE FILE_PATH="coverage/AJAX$run.coverage" NAME="run Coverage Results" MODIFIED="1544605383704" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day04" />
     <SUITE FILE_PATH="coverage/AJAX$run1.coverage" NAME="run1 Coverage Results" MODIFIED="1544435215810" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day02" />
     <SUITE FILE_PATH="coverage/AJAX$run01__1_.coverage" NAME="run01 (1) Coverage Results" MODIFIED="1544509876867" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day03" />
     <SUITE FILE_PATH="coverage/AJAX$run01.coverage" NAME="run01 Coverage Results" MODIFIED="1544183720912" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day01" />
@@ -186,22 +198,55 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/day03/run02.py">
+        <entry file="file://$PROJECT_DIR$/day04/day04.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="338">
-              <caret line="120" column="25" selection-start-line="120" selection-start-column="25" selection-end-line="120" selection-end-column="25" />
-              <folding>
-                <element signature="e#0#49#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="2200">
+              <caret line="100" column="34" selection-start-line="100" selection-start-column="34" selection-end-line="100" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/day04/run.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="498">
+              <caret line="36" selection-start-line="36" selection-end-line="36" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/day03/static/05-login.html">
+        <entry file="file://$PROJECT_DIR$/Blog/manage.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="22" column="25" lean-forward="true" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
+            <state>
+              <caret column="8" lean-forward="true" selection-start-column="8" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Blog/app/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="9" lean-forward="true" selection-start-column="9" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Blog/app/main/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="19" selection-start-column="19" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Blog/app/user/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="15" lean-forward="true" selection-start-column="15" selection-end-column="15" />
             </state>
           </provider>
         </entry>
@@ -211,10 +256,15 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>load</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -245,8 +295,22 @@
         <option value="$PROJECT_DIR$/day03/static/03-jq-get.html" />
         <option value="$PROJECT_DIR$/day03/static/04-jq-post.html" />
         <option value="$PROJECT_DIR$/day03/day03.txt" />
-        <option value="$PROJECT_DIR$/day03/run02.py" />
+        <option value="$PROJECT_DIR$/day04/4f -6++96.txt" />
+        <option value="$PROJECT_DIR$/day03/static/06-jq-ajax.html" />
         <option value="$PROJECT_DIR$/day03/static/05-login.html" />
+        <option value="$PROJECT_DIR$/day03/run02.py" />
+        <option value="$PROJECT_DIR$/day04/static/page.html" />
+        <option value="$PROJECT_DIR$/day04/static/02-crossdomain.html" />
+        <option value="$PROJECT_DIR$/day04/static/js/03-jq-crossdomain.html" />
+        <option value="$PROJECT_DIR$/day04/day04.txt" />
+        <option value="$PROJECT_DIR$/day04/static/03-jq-crossdomain.html" />
+        <option value="$PROJECT_DIR$/day04/run.py" />
+        <option value="$PROJECT_DIR$/Blog/app/models..py" />
+        <option value="$PROJECT_DIR$/Blog/app/models.py" />
+        <option value="$PROJECT_DIR$/Blog/manage.py" />
+        <option value="$PROJECT_DIR$/Blog/main/views.py" />
+        <option value="$PROJECT_DIR$/Blog/user/views.pu.py" />
+        <option value="$PROJECT_DIR$/Blog/user/views.py" />
       </list>
     </option>
   </component>
@@ -272,20 +336,13 @@
             <path>
               <item name="AJAX" type="b2602c69:ProjectViewProjectNode" />
               <item name="AJAX" type="462c0819:PsiDirectoryNode" />
-              <item name="day03" type="462c0819:PsiDirectoryNode" />
+              <item name="Blog" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="AJAX" type="b2602c69:ProjectViewProjectNode" />
               <item name="AJAX" type="462c0819:PsiDirectoryNode" />
-              <item name="day03" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AJAX" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AJAX" type="462c0819:PsiDirectoryNode" />
-              <item name="day03" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="Blog" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -302,10 +359,14 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Blog/app" />
+      <recent name="$PROJECT_DIR$/day04/static" />
       <recent name="$PROJECT_DIR$/day03/static" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/day04/static" />
+      <recent name="$PROJECT_DIR$/day04" />
       <recent name="$PROJECT_DIR$/day03/static" />
     </key>
   </component>
@@ -321,11 +382,30 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.run02">
-    <configuration name="01-json.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/AJAX/day02/templates/01-json.html">
+  <component name="RunManager" selected="Python.run">
+    <configuration name="02-manifest.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/AJAX/day02/templates/02-manifest.html">
       <method v="2" />
     </configuration>
-    <configuration name="02-manifest.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/AJAX/day02/templates/02-manifest.html">
+    <configuration name="run" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="AJAX" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/day04" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/day04/run.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
     <configuration name="run01 (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
@@ -396,11 +476,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.run" />
         <item itemvalue="Python.run02" />
         <item itemvalue="Python.run01 (1)" />
         <item itemvalue="Python.run1" />
         <item itemvalue="JavaScript Debug.02-manifest.html" />
-        <item itemvalue="JavaScript Debug.01-json.html" />
       </list>
     </recent_temporary>
   </component>
@@ -420,22 +500,25 @@
       <workItem from="1544489524167" duration="2282000" />
       <workItem from="1544492059633" duration="14797000" />
       <workItem from="1544517353450" duration="4575000" />
+      <workItem from="1544577550207" duration="8326000" />
+      <workItem from="1544597732892" duration="5686000" />
+      <workItem from="1544607281173" duration="1429000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55556000" />
+    <option name="totallyTimeSpent" value="70997000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1533" height="875" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20578346" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21385339" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3297587" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3297587" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3297587" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -553,16 +636,6 @@
     <entry file="file://$PROJECT_DIR$/day03/static/js/common.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/day03/run01.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="24" column="9" lean-forward="true" selection-start-line="24" selection-start-column="9" selection-end-line="26" />
-          <folding>
-            <element signature="e#0#49#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/day03/static/00-homework.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-58">
@@ -629,27 +702,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/day03/day03.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="429">
-          <caret line="33" column="38" selection-start-line="33" selection-start-column="38" selection-end-line="33" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/day03/static/03-jq-get.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="352">
           <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/day03/run02.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="120" column="25" selection-start-line="120" selection-start-column="25" selection-end-line="120" selection-end-column="25" />
-          <folding>
-            <element signature="e#0#49#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -660,10 +716,114 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/day04/4f -6++96.txt" />
+    <entry file="file://$PROJECT_DIR$/day03/run01.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="24" column="9" lean-forward="true" selection-start-line="24" selection-start-column="9" selection-end-line="26" />
+          <folding>
+            <element signature="e#0#49#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day03/static/06-jq-ajax.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="12" column="37" lean-forward="true" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/day03/static/05-login.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="22" column="25" lean-forward="true" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
+        <state relative-caret-position="492">
+          <caret line="63" column="34" lean-forward="true" selection-start-line="63" selection-start-column="34" selection-end-line="63" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day03/run02.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="448">
+          <caret line="134" column="23" lean-forward="true" selection-start-line="134" selection-start-column="23" selection-end-line="134" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#49#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day04/static/js/common.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day03/day03.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="12" column="20" lean-forward="true" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day04/static/page.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="9" column="42" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day04/day04.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2200">
+          <caret line="100" column="34" selection-start-line="100" selection-start-column="34" selection-end-line="100" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day04/static/02-crossdomain.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="11" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day04/run.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="498">
+          <caret line="36" selection-start-line="36" selection-end-line="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day04/static/03-jq-crossdomain.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="19" selection-start-line="15" selection-start-column="24" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Blog/app/main/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="19" selection-start-column="19" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Blog/app/user/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="15" lean-forward="true" selection-start-column="15" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Blog/app/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Blog/app/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="9" lean-forward="true" selection-start-column="9" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Blog/manage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="8" lean-forward="true" selection-start-column="8" selection-end-column="8" />
         </state>
       </provider>
     </entry>

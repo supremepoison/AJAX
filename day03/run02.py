@@ -44,6 +44,8 @@ class Login(db.Model):
     lpwd = db.Column(db.String(30))
     uname = db.Column(db.String(30))
 
+
+
     def to_dict(self):
         dic = {
             'id':self.id,
@@ -107,6 +109,7 @@ def jq_post():
 @app.route('/05-login')
 def login():
     uname = request.args['uname']
+
     if Login.query.filter_by(uname=uname).first():
         dic = {
             'status': 1,
@@ -119,6 +122,48 @@ def login():
             'text':'通过'
         }
     return json.dumps(dic)
+
+
+@app.route('/05-server',methods=['post'])
+def server05():
+    lname = request.form['lname']
+    lpwd = request.form['lpwd']
+    uname = request.form['uname']
+
+    login = Login()
+    login.lpwd = lpwd
+    login.uname = uname
+    login.lname = lname
+    try:
+        db.session.add(login)
+        db.session.commit()
+        dic = {
+            'status':1,
+            'text' : '注册成功'
+        }
+    except Exception as e:
+        print(e)
+        dic = {
+            'status':0,
+            'text': '注册失败'
+        }
+    return json.dumps(dic)
+
+
+
+
+
+
+
+
+
+@app.route('/06-jq-ajax')
+def jq_ajax():
+    logins = Login.query.all()
+    list = []
+    for l in logins:
+        list.append(l.to_dict())
+    return json.dumps(list)
 
 if __name__ == '__main__':
     app.run(debug=True)
