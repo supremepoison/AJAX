@@ -2,24 +2,71 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8ad9a787-0575-4324-9be4-40a030e8d6fb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Blog/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Blog/app/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Blog/app/main/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Blog/app/main/views.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Blog/app/user/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Blog/manage.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day03/static/06-jq-ajax.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day04/day04.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day04/run.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day04/static/02-crossdomain.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day04/static/03-jq-crossdomain.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day04/static/js/common.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day04/static/js/jquery-1.11.3.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day04/static/page.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Blog/app/static/css/animate.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Blog/app/static/css/base.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Blog/app/static/css/comments.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Blog/app/static/css/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Blog/app/static/css/login_reglogin.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Blog/app/static/css/m.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Blog/app/static/images/5794.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Blog/app/static/images/a.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Blog/app/static/images/alipay.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Blog/app/static/images/auicon.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Blog/app/static/images/author.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Blog/app/static/images/avatar.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Blog/app/static/images/b.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Blog/app/static/images/b04.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Blog/app/static/images/b05.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Blog/app/static/images/banner01.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Blog/app/static/images/banner02.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Blog/app/static/images/banner03.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Blog/app/static/images/bi05.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Blog/app/static/images/bitbug_favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Blog/app/static/images/blank.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Blog/app/static/images/c.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Blog/app/static/images/category.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Blog/app/static/images/commentPhoto.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Blog/app/static/images/comments.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Blog/app/static/images/d.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Blog/app/static/images/date.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Blog/app/static/images/dsbz.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Blog/app/static/images/dzbg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Blog/app/static/images/e.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Blog/app/static/images/f.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Blog/app/static/images/icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Blog/app/static/images/newsbg03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Blog/app/static/images/page_bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Blog/app/static/images/page_bg1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Blog/app/static/images/page_photo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Blog/app/static/images/page_time.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Blog/app/static/images/re_bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Blog/app/static/images/searchbg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Blog/app/static/images/tags.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Blog/app/static/images/time.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Blog/app/static/images/top.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Blog/app/static/images/toppic01.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Blog/app/static/images/toppic02.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Blog/app/static/images/v1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Blog/app/static/images/v2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Blog/app/static/images/wechat.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Blog/app/static/images/wx.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Blog/app/static/images/zd01.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Blog/app/static/js/ckeditor.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Blog/app/static/js/common.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Blog/app/static/js/jquery.easyfader.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Blog/app/static/js/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Blog/app/static/js/scrollReveal.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Blog/app/static/js/wangEditor.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Blog/app/static/js/xcConfirm.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day03/day03.txt" beforeDir="false" afterPath="$PROJECT_DIR$/day03/day03.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day03/run02.py" beforeDir="false" afterPath="$PROJECT_DIR$/day03/run02.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day03/static/05-login.html" beforeDir="false" afterPath="$PROJECT_DIR$/day03/static/05-login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blog/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blog/app/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Blog/app/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blog/app/main/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Blog/app/main/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blog/app/main/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Blog/app/main/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blog/app/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Blog/app/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blog/app/user/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Blog/app/user/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blog/app/user/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Blog/app/user/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blog/manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/Blog/manage.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../HTML5/Day01/01-page.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../HTML5/Day01/day01.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../HTML5/Day01/timg.jpg" beforeDir="false" />
@@ -191,35 +238,58 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/AJAX$run02.coverage" NAME="run02 Coverage Results" MODIFIED="1544582743723" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day03" />
     <SUITE FILE_PATH="coverage/AJAX$run.coverage" NAME="run Coverage Results" MODIFIED="1544605383704" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day04" />
+    <SUITE FILE_PATH="coverage/AJAX$views.coverage" NAME="views Coverage Results" MODIFIED="1544685093783" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Blog/app/main" />
     <SUITE FILE_PATH="coverage/AJAX$run1.coverage" NAME="run1 Coverage Results" MODIFIED="1544435215810" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day02" />
     <SUITE FILE_PATH="coverage/AJAX$run01__1_.coverage" NAME="run01 (1) Coverage Results" MODIFIED="1544509876867" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day03" />
+    <SUITE FILE_PATH="coverage/AJAX$manage.coverage" NAME="manage Coverage Results" MODIFIED="1544698284763" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Blog" />
     <SUITE FILE_PATH="coverage/AJAX$run01.coverage" NAME="run01 Coverage Results" MODIFIED="1544183720912" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day01" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/day04/day04.txt">
+        <entry file="file://$PROJECT_DIR$/Blog/app/main/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2200">
-              <caret line="100" column="34" selection-start-line="100" selection-start-column="34" selection-end-line="100" selection-end-column="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/day04/run.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="498">
-              <caret line="36" selection-start-line="36" selection-end-line="36" />
+            <state relative-caret-position="404">
+              <caret line="62" selection-start-line="62" selection-end-line="62" />
+              <folding>
+                <element signature="e#20#53#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Blog/manage.py">
+        <entry file="file://$PROJECT_DIR$/Blog/app/templates/release.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="8" lean-forward="true" selection-start-column="8" selection-end-column="8" />
+            <state relative-caret-position="170">
+              <caret line="96" column="33" selection-start-line="96" selection-start-column="33" selection-end-line="96" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Blog/app/templates/login.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="236">
+              <caret line="25" column="27" lean-forward="true" selection-start-line="25" selection-start-column="27" selection-end-line="25" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Blog/app/templates/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="183">
+              <caret line="48" selection-start-line="48" selection-end-line="49" selection-end-column="44" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Blog/app/main/__init__.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="88">
+              <caret line="4" column="33" selection-start-line="4" selection-end-line="4" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -227,26 +297,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Blog/app/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="9" lean-forward="true" selection-start-column="9" selection-end-column="9" />
+            <state relative-caret-position="22">
+              <caret line="18" column="22" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
+              <folding>
+                <element signature="e#29#45#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Blog/app/main/views.py">
+        <entry file="file://$PROJECT_DIR$/Blog/manage.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="19" selection-start-column="19" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Blog/app/user/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="15" lean-forward="true" selection-start-column="15" selection-end-column="15" />
+            <state relative-caret-position="132">
+              <caret line="6" column="27" lean-forward="true" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -264,6 +328,9 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>load</find>
+      <find>reply</find>
+      <find>干货</find>
+      <find>登录</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -306,18 +373,26 @@
         <option value="$PROJECT_DIR$/day04/static/03-jq-crossdomain.html" />
         <option value="$PROJECT_DIR$/day04/run.py" />
         <option value="$PROJECT_DIR$/Blog/app/models..py" />
-        <option value="$PROJECT_DIR$/Blog/app/models.py" />
-        <option value="$PROJECT_DIR$/Blog/manage.py" />
         <option value="$PROJECT_DIR$/Blog/main/views.py" />
         <option value="$PROJECT_DIR$/Blog/user/views.pu.py" />
         <option value="$PROJECT_DIR$/Blog/user/views.py" />
+        <option value="$PROJECT_DIR$/Blog/app/main/__init__.py" />
+        <option value="$PROJECT_DIR$/Blog/manage.py" />
+        <option value="$PROJECT_DIR$/Blog/app/user/__init__.py" />
+        <option value="$PROJECT_DIR$/Blog/app/user/views.py" />
+        <option value="$PROJECT_DIR$/Blog/app/__init__.py" />
+        <option value="$PROJECT_DIR$/Blog/app/models.py" />
+        <option value="$PROJECT_DIR$/Blog/app/templates/login.html" />
+        <option value="$PROJECT_DIR$/Blog/app/templates/index.html" />
+        <option value="$PROJECT_DIR$/Blog/app/main/views.py" />
+        <option value="$PROJECT_DIR$/Blog/app/templates/release.html" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="271" />
-    <option name="y" value="100" />
-    <option name="width" value="1180" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="397" />
+    <option name="y" value="72" />
+    <option name="width" value="1170" />
     <option name="height" value="646" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -326,6 +401,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -344,11 +420,17 @@
               <item name="Blog" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="AJAX" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AJAX" type="462c0819:PsiDirectoryNode" />
+              <item name="Blog" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -357,16 +439,26 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="PyConsoleConfigurable.Python Console" />
+  </component>
+  <component name="PyConsoleOptionsProvider">
+    <option name="myPythonConsoleState">
+      <console-settings module-name="AJAX" is-module-sdk="true">
+        <option name="myUseModuleSdk" value="true" />
+        <option name="myModuleName" value="AJAX" />
+      </console-settings>
+    </option>
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Blog/app/static" />
+      <recent name="$PROJECT_DIR$/day04/static" />
+      <recent name="$PROJECT_DIR$/day04" />
+      <recent name="$PROJECT_DIR$/day03/static" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/Blog/app" />
       <recent name="$PROJECT_DIR$/day04/static" />
-      <recent name="$PROJECT_DIR$/day03/static" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/day04/static" />
-      <recent name="$PROJECT_DIR$/day04" />
       <recent name="$PROJECT_DIR$/day03/static" />
     </key>
   </component>
@@ -382,8 +474,27 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.run">
-    <configuration name="02-manifest.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/AJAX/day02/templates/02-manifest.html">
+  <component name="RunManager" selected="Python.manage">
+    <configuration name="manage" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="AJAX" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Blog" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Blog/manage.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
     <configuration name="run" type="PythonConfigurationType" factoryName="Python" temporary="true">
@@ -452,7 +563,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="run1" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="views" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="AJAX" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -460,12 +571,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/day02" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Blog/app/main" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/day02/run1.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Blog/app/main/views.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -476,11 +587,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.manage" />
+        <item itemvalue="Python.views" />
         <item itemvalue="Python.run" />
         <item itemvalue="Python.run02" />
         <item itemvalue="Python.run01 (1)" />
-        <item itemvalue="Python.run1" />
-        <item itemvalue="JavaScript Debug.02-manifest.html" />
       </list>
     </recent_temporary>
   </component>
@@ -503,46 +614,23 @@
       <workItem from="1544577550207" duration="8326000" />
       <workItem from="1544597732892" duration="5686000" />
       <workItem from="1544607281173" duration="1429000" />
+      <workItem from="1544663125600" duration="10615000" />
+      <workItem from="1544683851564" duration="10291000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="70997000" />
+    <option name="totallyTimeSpent" value="91903000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1533" height="875" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21385339" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21923335" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3297587" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3297587" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" />
-      <window_info anchor="bottom" id="Python Console" order="12" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="SciView" order="3" />
-      <window_info anchor="right" id="R Graphics" order="4" />
-      <window_info anchor="right" id="R Packages" order="5" />
-      <window_info anchor="right" id="Database" order="6" />
-    </layout>
-    <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.34479716" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
       <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3297587" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -561,7 +649,7 @@
       <window_info anchor="right" id="R Graphics" order="4" />
       <window_info anchor="right" id="R Packages" order="5" />
       <window_info anchor="right" id="Database" order="6" />
-    </layout-to-restore>
+    </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -598,13 +686,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/day01/day01.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1584">
-          <caret line="72" column="21" selection-start-line="72" selection-start-column="7" selection-end-line="72" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/day02/templates/03-getlogin.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
@@ -623,13 +704,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="528">
           <caret line="24" column="51" selection-start-line="24" selection-start-column="51" selection-end-line="24" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/day02/day02.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1914">
-          <caret line="87" column="24" selection-start-line="87" selection-start-column="24" selection-end-line="87" selection-end-column="24" />
         </state>
       </provider>
     </entry>
@@ -754,24 +828,10 @@
     <entry file="file://$PROJECT_DIR$/day04/static/js/common.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/day03/day03.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="12" column="20" lean-forward="true" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/day04/static/page.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
           <caret line="9" column="42" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/day04/day04.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2200">
-          <caret line="100" column="34" selection-start-line="100" selection-start-column="34" selection-end-line="100" selection-end-column="34" />
         </state>
       </provider>
     </entry>
@@ -782,13 +842,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/day04/run.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="498">
-          <caret line="36" selection-start-line="36" selection-end-line="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/day04/static/03-jq-crossdomain.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -796,34 +849,128 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Blog/app/main/views.py">
+    <entry file="file://$PROJECT_DIR$/Blog/__init__.py" />
+    <entry file="file://$PROJECT_DIR$/day04/day04.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="19" selection-start-column="19" selection-end-column="19" />
+        <state relative-caret-position="675">
+          <caret line="100" column="34" selection-start-line="100" selection-start-column="34" selection-end-line="100" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day04/run.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="498">
+          <caret line="36" selection-start-line="36" selection-end-line="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Blog/app/user/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Blog/app/user/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="15" lean-forward="true" selection-start-column="15" selection-end-column="15" />
+        <state relative-caret-position="110">
+          <caret line="5" column="2" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Blog/app/static/css/m.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Blog/app/templates/time.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="1" column="6" lean-forward="true" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day01/day01.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-539">
+          <caret line="72" column="21" selection-start-line="72" selection-start-column="7" selection-end-line="72" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day02/day02.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="77">
+          <caret line="87" column="24" selection-start-line="87" selection-start-column="24" selection-end-line="87" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day03/day03.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="12" column="20" lean-forward="true" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Blog/app/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="341">
+          <caret line="20" column="32" lean-forward="true" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="32" />
+          <folding>
+            <element signature="e#58#81#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Blog/app/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="9" lean-forward="true" selection-start-column="9" selection-end-column="9" />
+        <state relative-caret-position="22">
+          <caret line="18" column="22" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
+          <folding>
+            <element signature="e#29#45#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Blog/app/main/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" column="33" selection-start-line="4" selection-end-line="4" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Blog/app/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="48" selection-start-line="48" selection-end-line="49" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Blog/app/templates/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="25" column="27" lean-forward="true" selection-start-line="25" selection-start-column="27" selection-end-line="25" selection-end-column="27" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Blog/manage.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="8" lean-forward="true" selection-start-column="8" selection-end-column="8" />
+        <state relative-caret-position="132">
+          <caret line="6" column="27" lean-forward="true" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Blog/app/main/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="404">
+          <caret line="62" selection-start-line="62" selection-end-line="62" />
+          <folding>
+            <element signature="e#20#53#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Blog/app/templates/release.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="96" column="33" selection-start-line="96" selection-start-column="33" selection-end-line="96" selection-end-column="33" />
         </state>
       </provider>
     </entry>
