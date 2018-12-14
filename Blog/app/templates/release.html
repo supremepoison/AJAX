@@ -76,7 +76,7 @@
 			<p class="n1">表发博客</p>
 		</h1>
 		<div class="infosbox">
-			<form action="#" method="post" enctype='multipart/form-data'>
+			<form action="/release" method="post" enctype='multipart/form-data'>
 				<br>
 				<p>
 					<input class="comment_input" id="author" maxlength="50" name="author" required="required" size="25" tabindex="1"
@@ -84,25 +84,35 @@
 					<label for="author">文章标题</label>
 				</p>
 				<br>
-				<!--<p class="classification">-->
+				<p class="classification">
 					<!--<input name="list" type="radio" value="1">个人博客-->
 					<!--<input name="list" type="radio" value="2">公开博客-->
 					<!--<input name="list" type="radio" value="3">其他博客-->
-
-				<!--</p>-->
-					<select >
 					{% for type in params.blog_type %}
-					<option value="{{ type.id }}">{{type.type_name}}</option>
+					<input type="radio" name="list" value="{{ type.id }}">{{type.type_name}}
+					{% endfor %}
+
+
+				</p>
+				<!-- 增加<select>: 表示博客的内容类型-->
+				<p style="margin: 15px 15px">
+					内容类型:
+					<select  name='category' >
+					{% for category in params.categories %}
+					<option value="{{ category.id }}">{{category.cate_name}}</option>
 					{% endfor %}
 					</select><br>
+				</p>
 
-				<!-- 增加<select>: 表示博客的内容类型-->
-					<input type="file">
 				<!-- 增加:<input type='file'>:表示上传的图片-->
+				<p style="margin: 15px 15px">
+					<input type="file" name="pic">
+				</p>
 				<br>
-				<textarea name="text" rows="30" cols="70"></textarea>
-
 				<!--增加<textarea name=''></textarea>-->
+				<textarea name="content" rows="20" cols="70"></textarea>
+
+
 				<br>
 				<p>
 					<input id="id_article" name="article" type="hidden" value="1">

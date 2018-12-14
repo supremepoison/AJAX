@@ -7,15 +7,15 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="shortcut icon" href="/static/images/bitbug_favicon.ico" type="image/x-icon" />
 	<link rel="stylesheet" href="../static/css/comments.css">
-	<link href="../static/css/base.css" rel="stylesheet">
-	<link href="../static/css/index.css" rel="stylesheet">
-	<link href="../static/css/m.css" rel="stylesheet">
-	<script src="../static/js/jquery.min.js" type="text/javascript"></script>
-	<script src="../static/js/jquery.easyfader.min.js"></script>
-	<script src="../static/js/scrollReveal.js"></script>
-	<script src="../static/js/wangEditor.js"></script>
-	<script src="../static/js/common.js"></script>
-	<script src="../static/js/xcConfirm.js"></script>
+	<link href="/static/css/base.css" rel="stylesheet">
+	<link href="/static/css/index.css" rel="stylesheet">
+	<link href="/static/css/m.css" rel="stylesheet">
+	<script src="/static/js/jquery.min.js" type="text/javascript"></script>
+	<script src="/static/js/jquery.easyfader.min.js"></script>
+	<script src="/static/js/scrollReveal.js"></script>
+	<script src="/static/js/wangEditor.js"></script>
+	<script src="/static/js/common.js"></script>
+	<script src="/static/js/xcConfirm.js"></script>
 </head>
 
 <body>
@@ -76,62 +76,21 @@
 		</h1>
 		<div class="infosbox">
 			<div class="newsview">
-				<h3 class="news_title">简单而直接的Python web 框架：web.py</h3>
+				<h3 class="news_title">{{params.topic.title}}</h3>
 				<div class="bloginfo">
 					<ul>
-						<li class="author"><a href="#">皮皮璐</a></li>
-						<li class="lmname"><a href="#">学无止境</a></li>
-						<li class="timer">2018-9-13</li>
-						<li class="view">4567已阅读</li>
-						<li class="like">8888888</li>
+						<li class="author"><a href="#">{{params.topic.user.uname}}</a></li>
+						<li class="lmname"><a href="#">{{params.topic.category.cate_name}}</a></li>
+						<li class="timer">{{params.topic.pub_date.strftime('%Y-%m-%d')}}</li>
+						<li class="view">{{params.topic.read_num}}已阅读</li>
+						<li class="like">{{params.topic.voke_users.count()}}</li>
 					</ul>
 				</div>
-				<div class="tags"><a href="#" target="_blank">个人博客</a> &nbsp; <a href="#" target="_blank">小世界</a></div>
+				<div class="tags"><a href="#" target="_blank">{{params.topic.blogType}}</a> &nbsp; <a href="#" target="_blank">小世界</a></div>
 				<div class="news_about"><strong>简介</strong>web.py 是一个Python 的web 框架，它简单而且功能强大。web.py
 					是公开的，无论用于什么用途都是没有限制的。而且相当的小巧，应当归属于轻量级的web 框架。但这并不影响web.py 的强大，而且使用起来很简单、很直接。</div>
 				<div class="news_con">
-					From：https://www.oschina.net/question/5189_4306<br>
-					<br>
-					From：https://www.oschina.net/question/5189_4306<br>
-					<br>
-					<img alt="" src="/static/images/bi01.jpg"><br>
-					<br>
-					Web.py Cookbook 简体中文版：http://webpy.org/cookbook/index.zh-cn<br>
-					<br>
-					web.py 0.3 新手指南：http://webpy.org/docs/0.3/tutorial.zh-cn<br>
-					<br>
-					<img alt="" src="/static/images/bi02.jpg"><br>
-					<br>
-					webpy 官网文档：http://webpy.org/
-
-					web.py 十分钟创建简易博客：http://blog.csdn.net/freeking101/article/details/53020728<br>
-					<br>
-					web.py 是一个Python 的web 框架，它简单而且功能强大。web.py 是公开的，无论用于什么用途都是没有限制的。而且相当的小巧，应当归属于轻量级的web 框架。但这并不影响web.py
-					的强大，而且使用起来很简单、很直接。在实际应用上，web.py 更多的是学术上的价值，因为你可以看到更多web 应用的底层，这在当今“抽象得很好”的web 框架上是学不到的 ：）
-					如果想了解更多web.py，可以访问web.py 的官方文档。
-
-					先感受一下web.py 的简单而强大：<br>
-					<br>
-					上面就是一个基于web.py 的完整的Web 应用。将上面的代码保存为文件code.py，在命令行下执行python code.py。然后打开你的浏览器，打开地址：http://localhost:8080 或者
-					http://localhost:8080/test 没有意外的话(当然要先安装web.py，下面会有介绍)，浏览器会显示“Hello, world”或者 “Hello, test”。
-					<br>
-					<br>
-					<img alt="" src="/static/images/bi03.jpg"><br>
-					<br>
-					1. 安装
-					下载 web.py 的安装文件，将下载得到的文件 web.py 解压，进入解压后的文件夹，在命令行下执行：python setup.py install，在Linux 等系统下，需要root 的权限，可以执行：sudo
-					python setup.py install。
-
-					2. URL 处理
-					对于一个站点来说，URL 的组织是最重要的一个部分，因为这是用户看得到的部分，而且直接影响到站点是如何工作的，例如：www.baidu.com ，其URLs 甚至是网页界面的一部分。而web.py
-					以简单的方式就能够构造出一个强大的URLs。
-					在每个web.py 应用，必须先import web 模块：<br>
-					<br>
-					<br>
-					<img alt="" src="/static/images/bi06.jpg"><br>
-					<br>
-					&nbsp;
-				</div>
+					{{params.topic.content}}
 			</div>
 			<div class="share">
 				<p class="diggit">
@@ -143,8 +102,21 @@
 				<div class="hide_box"></div>
 			</div>
 			<div class="nextinfo">
-				<p>上一篇：<a href="info.html">作为一个设计师,如果遭到质疑你是否能恪守自己的原则?</a></p>
-				<p>下一篇：<a href="list.html">返回列表</a></p>
+				<p>上一篇：
+					{% if params.prevTopic %}
+					<a href="/info?topic_id={{params.prevTopic.id}}">{{params.prevTopic.title}}</a>
+					{% else %}
+					<a href="/list">返回列表</a>
+					{% endif %}
+				</p>
+				<p>下一篇：
+					{% if params.nextTopic %}
+					<a href="/info?topic_id={{params.nextTopic.id}}">{{params.nextTopic.title}}</a>
+					{% else %}
+					<a href="/list">返回列表</a>
+					{% endif %}
+
+				</p>
 			</div>
 			<div class="news_pl">
 				<h2>文章评论</h2>
@@ -255,7 +227,7 @@
 			<div class="zhuanti">
 				<h2 class="hometitle">特别推荐</h2>
 				<ul>
-					<li> <i><img src="/static/images/banner03.jpg"></i>
+					<li> <i><img src="../static/images/banner03.jpg"></i>
 						<p>帝国cms调用方法 <span><a href="#">阅读</a></span> </p>
 					</li>
 					<li> <i><img src="/static/images/b04.jpg"></i>
